@@ -29,6 +29,8 @@ class ViewController: UIViewController {
         tableView.register(TableViewCell.self, forCellReuseIdentifier: TableViewCell.className)
         tableView.delegate = self
         tableView.estimatedRowHeight = 44
+        tableView.showsVerticalScrollIndicator = false
+        tableView.bounces = false
         return tableView
     }()
     
